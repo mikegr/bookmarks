@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Secure source code hosting and collaborative development - GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+
+    <link href="https://assets1.github.com/stylesheets/bundle_common.css?d5fd66b54f6223e6f6008628f23f8e21d86d7012" media="screen" rel="stylesheet" type="text/css" />
+<link href="https://assets1.github.com/stylesheets/bundle_github.css?d5fd66b54f6223e6f6008628f23f8e21d86d7012" media="screen" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+      if (typeof console == "undefined" || typeof console.log == "undefined")
+        console = { log: function() {} }
+    </script>
+    <script type="text/javascript" charset="utf-8">
+      var GitHub = {}
+      var github_user = null
+      
+    </script>
+    <script src="https://assets3.github.com/javascripts/jquery/jquery-1.4.2.min.js?d5fd66b54f6223e6f6008628f23f8e21d86d7012" type="text/javascript"></script>
+    <script src="https://assets3.github.com/javascripts/bundle_common.js?d5fd66b54f6223e6f6008628f23f8e21d86d7012" type="text/javascript"></script>
+<script src="https://assets0.github.com/javascripts/bundle_github.js?d5fd66b54f6223e6f6008628f23f8e21d86d7012" type="text/javascript"></script>
+
+
+        <script type="text/javascript" charset="utf-8">
+      GitHub.spy({
+        repo: ""
+      })
+    </script>
+
+    
+
+            <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3769691-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+      })();
+    </script>
+
+          <script type="text/javascript">
+      var mpq = [];
+      mpq.push(["init", "65fde2abd433eae3b32b38b7ebd2f37e"]);
+      (function() {
+      var mp = document.createElement("script"); mp.type = "text/javascript"; mp.async = true;
+      mp.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//api.mixpanel.com/site_media/js/api/mixpanel.js";
+      var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(mp, s);
+      })();
+      </script>
+
+  </head>
+
+  
+
+  <body class="logged_out page-home">
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="" id="main">
+      <div id="header" class="true">
+        
+          <a class="logo boring" href="https://github.com">
+            <img src="/images/modules/header/logov3.png?changed" class="default" alt="github" />
+            <!--[if (gt IE 8)|!(IE)]><!-->
+            <img src="/images/modules/header/logov3-hover.png" class="hover" alt="github" />
+            <!--<![endif]-->
+          </a>
+        
+        
+        <div class="topsearch">
+  
+    <ul class="nav logged_out">
+      <li class="pricing"><a href="/plans">Pricing and Signup</a></li>
+      <li class="explore"><a href="/explore">Explore GitHub</a></li>
+      <li class="features"><a href="/features">Features</a></li>
+      <li class="blog"><a href="/blog">Blog</a></li>
+      <li class="login"><a href="/login">Login</a></li>
+    </ul>
+  
+</div>
+
+      </div>
+
+      
+      
+        <div class="site">
+          
+
+
+<div class="pagehead homehead">
+  <div class="hero">
+    
+      <h1>
+        <strong>612,841</strong> people hosting over <strong>1,768,919</strong> git repositories
+      </h1>
+    
+    <div class="textographic">
+      <form action="/search" id="top_search_form" method="get">
+        <p>
+          <a class="repo" href="/jquery/jquery">jQuery</a>,
+          <a class="repo" href="/reddit/reddit">reddit</a>,
+          <a class="repo" href="/andymatuschak/Sparkle">Sparkle</a>,
+          <a class="repo" href="/bagder/curl">curl</a>,
+          <a class="repo" href="/rails/rails">Ruby on Rails</a>,
+          <a class="repo" href="/ry/node">node.js</a>,
+          <a class="repo" href="/rentzsch/clicktoflash">ClickToFlash</a>,
+          <a class="repo" href="/erlang/otp">Erlang/OTP</a>,
+          <a class="repo" href="/cakephp/cakephp">CakePHP</a>,
+          <a class="repo" href="/antirez/redis">Redis</a>,
+          and <strong><a href="/repositories">many more</a></strong>
+
+          <input type="text" class="search" name="q" placeholder="Find any repository" />
+          <input type="hidden" name="type" value="Everything" />
+          <input type="hidden" name="repo" value="" />
+          <input type="hidden" name="langOverride" value="" />
+          <input type="hidden" name="start_value" value="1" />
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="logos">
+  <a href="/twitter"><img alt="Twitter" height="25" src="https://assets0.github.com/images/modules/home/logos/twitter.png?d5fd66b54f6223e6f6008628f23f8e21d86d7012" width="115" /></a>
+  <a href="/facebook"><img alt="facebook" height="37" src="https://assets2.github.com/images/modules/home/logos/facebook.png?d5fd66b54f6223e6f6008628f23f8e21d86d7012" width="100" /></a>
+  <a href="/rackspace"><img alt="Rackspace" height="30" src="https://assets0.github.com/images/modules/home/logos/rackspace.png?v2?d5fd66b54f6223e6f6008628f23f8e21d86d7012" width="105" /></a>
+  <a href="/digg"><img alt="Digg" height="27" src="https://assets3.github.com/images/modules/home/logos/digg.png?d5fd66b54f6223e6f6008628f23f8e21d86d7012" width="50" /></a>
+  <a href="/yahoo"><img alt="Yahoo!" height="23" src="https://assets1.github.com/images/modules/home/logos/yahoo.png?d5fd66b54f6223e6f6008628f23f8e21d86d7012" width="123" /></a>
+  <a href="/shopify"><img alt="Shopify" height="27" src="https://assets3.github.com/images/modules/home/logos/shopify.png?d5fd66b54f6223e6f6008628f23f8e21d86d7012" width="100" /></a>
+  <a href="/emi"><img alt="EMI" height="37" src="https://assets1.github.com/images/modules/home/logos/emi.png?d5fd66b54f6223e6f6008628f23f8e21d86d7012" width="76" /></a>
+  <a href="/sixapart"><img alt="Six Apart" height="35" src="https://assets2.github.com/images/modules/home/logos/sixapart.png?d5fd66b54f6223e6f6008628f23f8e21d86d7012" width="62" /></a>
+</div>
+
+<div class="definitions">
+  <div class="inner columns equacols">
+    <div class="column main">
+      <h2>git <em>/'ɡɪt/</em></h2>
+      <p>Git is an extremely fast, efficient, distributed version control system ideal for the collaborative development of software.</p>
+    </div><!-- /.column.left -->
+
+    <div class="column secondary">
+      <h2>git·hub <em>/'ɡɪtˌhʌb/</em></h2>
+      <p>GitHub is the best way to collaborate with others.  Fork, send pull requests and manage all your <strong>public</strong> and <strong>private</strong> git repositories.</p>
+    </div><!-- /.column.right -->
+  </div><!-- /.columns.inner -->
+</div><!-- /.definitions -->
+
+<div class="signup-entice">
+  <a href="/plans" class="signup-button"><strong>Plans, Pricing and Signup</strong> Unlimited public repositories are <em>free!</em></a>
+  <p>Free public repositories, collaborator management, issue tracking, wikis, downloads, code review, graphs and much more…</p>
+</div>
+
+<div class="rule"></div>
+
+<div class="columns fourcols feature-overview">
+  <div class="column leftmost">
+    <h3>Team management</h3>
+    <p><strong>30 seconds</strong> to give people access to code. No SSH key required. Activity feeds keep you updated on progress.</p>
+    <p><strong><a href="/features/projects/collaboration">More about collaboration</a></strong></p>
+  </div><!-- /.leftmost -->
+  <div class="column leftmid">
+    <h3>Code review</h3>
+    <p>Comment on changes, track issues, compare branches, send pull requests and merge forks.</p>
+    <p><strong><a href="/features/projects/codereview">More about code review</a></strong></p>
+  </div><!-- /.leftmid -->
+  <div class="column rightmid">
+    <h3>Reliable code hosting</h3>
+    <p>We spend all day and  night making sure your repositories are <strong>secure</strong>, <strong>backed up</strong> and <strong>always available</strong>.</p>
+    <p><strong><a href="/features/hosting">More about code hosting</a></strong></p>
+  </div><!-- /.rightmid -->
+  <div class="column rightmost">
+    <h3>Open source collaboration</h3>
+    <p>Participate in the most important open source community in the world today—online or at one of our meetups.</p>
+    <p><strong><a href="/features/community">More about our community</a></strong></p>
+  </div><!-- /.rightmost -->
+</div>
+
+        </div>
+      
+    </div>
+
+    <div id="footer" class="clearfix">
+      <div class="site">
+        <div class="sponsor">
+          <a href="http://www.rackspace.com" class="logo">
+            <img alt="Dedicated Server" src="https://assets0.github.com/images/modules/footer/rackspace_logo.png?v2?d5fd66b54f6223e6f6008628f23f8e21d86d7012" />
+          </a>
+          Powered by the <a href="http://www.rackspace.com ">Dedicated
+          Servers</a> and<br/> <a href="http://www.rackspacecloud.com">Cloud
+          Computing</a> of Rackspace Hosting<span>&reg;</span>
+        </div>
+
+        <ul class="links">
+          <li class="blog"><a href="https://github.com/blog">Blog</a></li>
+          <li><a href="http://support.github.com">Support</a></li>
+          <li><a href="https://github.com/training">Training</a></li>
+          <li><a href="http://jobs.github.com">Job Board</a></li>
+          <li><a href="http://shop.github.com">Shop</a></li>
+          <li><a href="https://github.com/contact">Contact</a></li>
+          <li><a href="http://develop.github.com">API</a></li>
+          <li><a href="http://status.github.com">Status</a></li>
+        </ul>
+        <ul class="sosueme">
+          <li class="main">&copy; 2011 <span id="_rrt" title="0.29889s from fe2.rs.github.com">GitHub</span> Inc. All rights reserved.</li>
+          <li><a href="/site/terms">Terms of Service</a></li>
+          <li><a href="/site/privacy">Privacy</a></li>
+          <li><a href="https://github.com/security">Security</a></li>
+        </ul>
+      </div>
+    </div><!-- /#footer -->
+
+    
+      
+      
+        <!-- current locale:  -->
+        <div class="locales">
+          <div class="site">
+
+            <ul class="choices clearfix limited-locales">
+              <li><span class="current">English</span></li>
+              
+                  <li><a rel="nofollow" href="?locale=de">Deutsch</a></li>
+              
+                  <li><a rel="nofollow" href="?locale=fr">Français</a></li>
+              
+                  <li><a rel="nofollow" href="?locale=ja">日本語</a></li>
+              
+                  <li><a rel="nofollow" href="?locale=pt-BR">Português (BR)</a></li>
+              
+                  <li><a rel="nofollow" href="?locale=ru">Русский</a></li>
+              
+                  <li><a rel="nofollow" href="?locale=zh">中文</a></li>
+              
+              <li class="all"><a href="#" class="minibutton btn-forward js-all-locales"><span><span class="icon"></span>See all available languages</span></a></li>
+            </ul>
+
+            <div class="all-locales clearfix">
+              <h3>Your current locale selection: <strong>English</strong>. Choose another?</h3>
+              
+              
+                <ul class="choices">
+                  
+                      <li><a rel="nofollow" href="?locale=en">English</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=af">Afrikaans</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=ca">Català</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=cs">Čeština</a></li>
+                  
+                </ul>
+              
+                <ul class="choices">
+                  
+                      <li><a rel="nofollow" href="?locale=de">Deutsch</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=es">Español</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=fr">Français</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=hr">Hrvatski</a></li>
+                  
+                </ul>
+              
+                <ul class="choices">
+                  
+                      <li><a rel="nofollow" href="?locale=id">Indonesia</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=it">Italiano</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=ja">日本語</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=nl">Nederlands</a></li>
+                  
+                </ul>
+              
+                <ul class="choices">
+                  
+                      <li><a rel="nofollow" href="?locale=no">Norsk</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=pl">Polski</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=pt-BR">Português (BR)</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=ru">Русский</a></li>
+                  
+                </ul>
+              
+                <ul class="choices">
+                  
+                      <li><a rel="nofollow" href="?locale=sr">Српски</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=sv">Svenska</a></li>
+                  
+                      <li><a rel="nofollow" href="?locale=zh">中文</a></li>
+                  
+                </ul>
+              
+            </div>
+
+          </div>
+          <div class="fade"></div>
+        </div>
+      
+    
+
+    <script>window._auth_token = "de403883dd9b40cf1e4468f31dedb34b39bff597"</script>
+    
+
+<div id="keyboard_shortcuts_pane" style="display:none">
+  <h2>Keyboard Shortcuts <small><a href="#" class="js-see-all-keyboard-shortcuts">(see all)</a></small></h2>
+
+  <div class="columns threecols">
+    <div class="column first">
+      <h3>Site wide shortcuts</h3>
+      <dl class="keyboard-mappings">
+        <dt>s</dt>
+        <dd>Focus site search</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>?</dt>
+        <dd>Bring up this help dialog</dd>
+      </dl>
+    </div><!-- /.column.first -->
+
+    <div class="column middle" style='display:none'>
+      <h3>Commit list</h3>
+      <dl class="keyboard-mappings">
+        <dt>j</dt>
+        <dd>Move selected down</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>k</dt>
+        <dd>Move selected up</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>t</dt>
+        <dd>Open tree</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>p</dt>
+        <dd>Open parent</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>c <em>or</em> o <em>or</em> enter</dt>
+        <dd>Open commit</dd>
+      </dl>
+    </div><!-- /.column.first -->
+
+    <div class="column last" style='display:none'>
+      <h3>Pull request list</h3>
+      <dl class="keyboard-mappings">
+        <dt>j</dt>
+        <dd>Move selected down</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>k</dt>
+        <dd>Move selected up</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>o <em>or</em> enter</dt>
+        <dd>Open issue</dd>
+      </dl>
+    </div><!-- /.columns.last -->
+
+  </div><!-- /.columns.equacols -->
+
+  <div style='display:none'>
+    <div class="rule"></div>
+
+    <h3>Issues</h3>
+
+    <div class="columns threecols">
+      <div class="column first">
+        <dl class="keyboard-mappings">
+          <dt>j</dt>
+          <dd>Move selected down</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>k</dt>
+          <dd>Move selected up</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>x</dt>
+          <dd>Toggle select target</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>o <em>or</em> enter</dt>
+          <dd>Open issue</dd>
+        </dl>
+      </div><!-- /.column.first -->
+      <div class="column middle">
+        <dl class="keyboard-mappings">
+          <dt>I</dt>
+          <dd>Mark selected as read</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>U</dt>
+          <dd>Mark selected as unread</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>e</dt>
+          <dd>Close selected</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>y</dt>
+          <dd>Remove selected from view</dd>
+        </dl>
+      </div><!-- /.column.middle -->
+      <div class="column last">
+        <dl class="keyboard-mappings">
+          <dt>c</dt>
+          <dd>Create issue</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>l</dt>
+          <dd>Create label</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>i</dt>
+          <dd>Back to inbox</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>u</dt>
+          <dd>Back to issues</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>/</dt>
+          <dd>Focus issues search</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div class="rule"></div>
+
+    <h3>Network Graph</h3>
+    <div class="columns equacols">
+      <div class="column first">
+        <dl class="keyboard-mappings">
+          <dt><span class="badmono">←</span> <em>or</em> h</dt>
+          <dd>Scroll left</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt><span class="badmono">→</span> <em>or</em> l</dt>
+          <dd>Scroll right</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt><span class="badmono">↑</span> <em>or</em> k</dt>
+          <dd>Scroll up</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt><span class="badmono">↓</span> <em>or</em> j</dt>
+          <dd>Scroll down</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>t</dt>
+          <dd>Toggle visibility of head labels</dd>
+        </dl>
+      </div><!-- /.column.first -->
+      <div class="column last">
+        <dl class="keyboard-mappings">
+          <dt>shift <span class="badmono">←</span> <em>or</em> shift h</dt>
+          <dd>Scroll all the way left</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>shift <span class="badmono">→</span> <em>or</em> shift l</dt>
+          <dd>Scroll all the way right</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>shift <span class="badmono">↑</span> <em>or</em> shift k</dt>
+          <dd>Scroll all the way up</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>shift <span class="badmono">↓</span> <em>or</em> shift j</dt>
+          <dd>Scroll all the way down</dd>
+        </dl>
+      </div><!-- /.column.last -->
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div class="rule"></div>
+
+    <h3>Source Code Browsing</h3>
+    <div class="columns threecols">
+      <div class="column first">
+        <dl class="keyboard-mappings">
+          <dt>t</dt>
+          <dd>Activates the file finder</dd>
+        </dl>
+        <dl class="keyboard-mappings">
+          <dt>l</dt>
+          <dd>Jump to line</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+</div>
+    
+
+    <!--[if IE 8]>
+    <script type="text/javascript" charset="utf-8">
+      $(document.body).addClass("ie8")
+    </script>
+    <![endif]-->
+
+    <!--[if IE 7]>
+    <script type="text/javascript" charset="utf-8">
+      $(document.body).addClass("ie7")
+    </script>
+    <![endif]-->
+
+    
+    <script type='text/javascript'>mpq.push(['track', 'Viewed Homepage']);</script>
+    
+  
+
+  <script>
+  if (window.addEventListener) {
+    var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65"
+    window.addEventListener("keydown", function(e) {
+      kkeys.push(e.keyCode)
+      if (kkeys.toString().indexOf( konami ) >= 0) window.location = "http://logicalawesome.com"
+    }, true)
+  }
+  </script>
+
+  </body>
+</html>
