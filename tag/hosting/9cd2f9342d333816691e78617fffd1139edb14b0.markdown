@@ -1,6 +1,1 @@
-[http://github.com](http://github.com)
-
-Github is a git repository hosting provider
-
-Edited in /tag/hosting/9cd2...
-
+../../links/9cd2f9342d333816691e78617fffd1139edb14b0.markdown
